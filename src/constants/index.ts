@@ -1,1 +1,1 @@
-export {LOAN_STACK} from './navigator';
+export {LOAN_NAVIGATORS} from './navigator';

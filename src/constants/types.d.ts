@@ -1,3 +1,3 @@
 import { ModelOfLoanNavigator } from "./navigator"
 
-export const LOAN_STACK:ModelOfLoanNavigator
+export const LOAN_NAVIGATORS:ModelOfLoanNavigator
