@@ -17,7 +17,8 @@
     "react-native": "0.71.2",
     "@poc/theme":"*",
     "@poc/templates":"*",
-    "@poc/core":"*"
+    "@poc/core":"*",
+    "@poc/tools": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

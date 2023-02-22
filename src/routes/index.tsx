@@ -1,7 +1,7 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { LoanDetailScreen, LoanListScreen } from '../screens';
-import { LOAN_NAVIGATORS } from '../constants';
+import { LOAN_NAVIGATORS } from '@poc/tools';
 
 const Stack = createNativeStackNavigator();
 
