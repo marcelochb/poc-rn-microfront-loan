@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeBase } from '@poc/theme';
 import { LoanDetailTemplate } from '@poc/templates';
 
-export const LoanDetail = () => {
+export const LoanDetailScreen = () => {
   return (
     <LoanDetailTemplate theme={ThemeBase.Midway} />
   );

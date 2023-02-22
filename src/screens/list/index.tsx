@@ -3,7 +3,7 @@ import { ThemeBase } from '@poc/theme'
 import { LoanListTemplate } from '@poc/templates'
 import { useLoanListController } from '@poc/core'
 
-export const LoanList = () => {
+export const LoanListScreen = () => {
   const {getController, handleController} = useLoanListController();
   return (
     <LoanListTemplate 
@@ -11,7 +11,6 @@ export const LoanList = () => {
       loans={getController.loans} 
       error={getController.error}
       loading={getController.loading}
-      errorText={'Tivemos um problema de comunicação'}
       navigateToDetail={handleController.navigateToDetail}
     />
   )

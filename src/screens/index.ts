@@ -1,2 +1,2 @@
-export {LoanDetail} from './detail';
-export {LoanList} from './list';
+export {LoanDetailScreen} from './detail';
+export {LoanListScreen} from './list';

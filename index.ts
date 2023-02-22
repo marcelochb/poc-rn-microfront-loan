@@ -1,2 +1,2 @@
 export * from './src/routes';
-export * from './src/constants';
+export * from './src/screens';
