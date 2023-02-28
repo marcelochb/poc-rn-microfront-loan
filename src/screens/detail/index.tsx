@@ -10,7 +10,7 @@ export const LoanDetailScreen = () => {
       theme={ThemeBase.Midway}
       loading={getController.loading}
       error={getController.error}
-      loan={getController.loan}
+      loan={getController.data}
     />
   );
 };

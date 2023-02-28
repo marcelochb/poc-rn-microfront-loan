@@ -1,3 +1,3 @@
-import { Component } from "react";
+import { IMicrofont } from "@poc/interfaces";
 
-export class LoanStack extends Component {}
+export const LoanStack:IMicrofont;
