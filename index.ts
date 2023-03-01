@@ -1,2 +1,1 @@
-export * from './src/routes';
-export * from './src/screens';
+export {LoanStack} from './src';

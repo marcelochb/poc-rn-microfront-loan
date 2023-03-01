@@ -6,26 +6,9 @@ import { IMicrofont } from '@poc/interfaces';
 
 const Stack = createNativeStackNavigator();
 
-export const LoanStack:IMicrofont = {
-  stack: {
-    component: () => (
-        <Stack.Navigator screenOptions={{headerBackTitleVisible: false}}>
-          <Stack.Screen name="LoanList" component={LoanListScreen} options={{title: LOAN_NAVIGATORS.screens.list.title}}/>
-          <Stack.Screen name="LoanDetail" component={LoanDetailScreen} options={{title: LOAN_NAVIGATORS.screens.detail.title}} />
-        </Stack.Navigator>
-      ),
-    name: 'LoanStack'
-  },
-  screens: [
-    {
-      component: LoanListScreen,
-      name: 'LoanList',
-      title: 'Empréstimos'
-    },
-    {
-      component: LoanDetailScreen,
-      name: 'LoanDetail',
-      title: 'Detalhes do empréstimo'
-    }
-  ]
-}
+export const Route = () => (
+  <Stack.Navigator screenOptions={{headerBackTitleVisible: false}}>
+    <Stack.Screen name="LoanList" component={LoanListScreen} options={{title: LOAN_NAVIGATORS.screens.list.title}}/>
+    <Stack.Screen name="LoanDetail" component={LoanDetailScreen} options={{title: LOAN_NAVIGATORS.screens.detail.title}} />
+  </Stack.Navigator>
+)

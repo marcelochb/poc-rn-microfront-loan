@@ -8,8 +8,8 @@ import { LOAN_NAVIGATORS } from '@poc/tools'
 export const LoanListScreen = () => {
   const navigation = useNavigation<any>();
   const navigateToDetail = useCallback(
-      ({id}:LoanEntity) => {
-      navigation.navigate(LOAN_NAVIGATORS.screens.detail.name, {id});
+      (item:LoanEntity) => {
+      navigation.navigate(LOAN_NAVIGATORS.screens.detail.name, {id: item.id});
     },[]
   )
   const {getController} = useLoanListController();
@@ -19,7 +19,7 @@ export const LoanListScreen = () => {
       listData={getController.data} 
       error={getController.error}
       loading={getController.loading}
-      callBack={navigateToDetail}
+      callBack={(it:LoanEntity) =>navigateToDetail(it)}
     />
   )
 }
