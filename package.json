@@ -18,7 +18,7 @@
     "@poc/theme":"*",
     "@poc/templates":"*",
     "@poc/core":"*",
-    "@poc/tools": "*"
+    "@poc/interfaces":"*"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
