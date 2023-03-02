@@ -1,14 +1,13 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { LoanDetailScreen, LoanListScreen } from '../screens';
-import { LOAN_NAVIGATORS } from '@poc/tools';
-import { IMicrofont } from '@poc/interfaces';
+import { NAVIGATOR_CONSTANTS } from '../constants';
 
 const Stack = createNativeStackNavigator();
 
 export const Route = () => (
   <Stack.Navigator screenOptions={{headerBackTitleVisible: false}}>
-    <Stack.Screen name="LoanList" component={LoanListScreen} options={{title: LOAN_NAVIGATORS.screens.list.title}}/>
-    <Stack.Screen name="LoanDetail" component={LoanDetailScreen} options={{title: LOAN_NAVIGATORS.screens.detail.title}} />
+    <Stack.Screen name={NAVIGATOR_CONSTANTS.LIST_SCREEN_NAME} component={LoanListScreen} options={{title: NAVIGATOR_CONSTANTS.LIST_SCREEN_TITLE}}/>
+    <Stack.Screen name={NAVIGATOR_CONSTANTS.DETAIL_SCREEN_NAME} component={LoanDetailScreen} options={{title: NAVIGATOR_CONSTANTS.DETAIL_SCREEN_TITLE}} />
   </Stack.Navigator>
 )

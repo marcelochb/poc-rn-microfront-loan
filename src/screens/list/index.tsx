@@ -3,13 +3,13 @@ import { ThemeBase } from '@poc/theme'
 import { LoanListTemplate } from '@poc/templates'
 import { LoanEntity, useLoanListController } from '@poc/core'
 import { useNavigation } from '@react-navigation/native'
-import { LOAN_NAVIGATORS } from '@poc/tools'
+import { NAVIGATOR_CONSTANTS } from '../../constants'
 
 export const LoanListScreen = () => {
   const navigation = useNavigation<any>();
   const navigateToDetail = useCallback(
       (item:LoanEntity) => {
-      navigation.navigate(LOAN_NAVIGATORS.screens.detail.name, {id: item.id});
+      navigation.navigate(NAVIGATOR_CONSTANTS.DETAIL_SCREEN_NAME, {id: item.id});
     },[]
   )
   const {getController} = useLoanListController();
