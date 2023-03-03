@@ -12,13 +12,13 @@ export const LoanListScreen = () => {
       navigation.navigate(NAVIGATOR_CONSTANTS.DETAIL_SCREEN_NAME, {id: item.id});
     },[]
   )
-  const {getController} = useLoanListController();
+  const {data,error,loading} = useLoanListController();
   return (
     <LoanListTemplate 
       theme={ThemeBase.Midway} 
-      listData={getController.data} 
-      error={getController.error}
-      loading={getController.loading}
+      listData={data} 
+      error={error}
+      loading={loading}
       callBack={(it:LoanEntity) =>navigateToDetail(it)}
     />
   )
