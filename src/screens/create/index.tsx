@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { LoanCreateTemplate } from '@poc/templates'
 import { ThemeBase } from '@poc/theme'
 import { useLoanCreateController } from '@poc/core'
 import { useNavigation } from '@react-navigation/native'
 
 export const LoanCreateScreen = () => {
-  const {data,error,loading,onChange,onSubmit} = useLoanCreateController();
   const navigation = useNavigation();
+  const {data,error,loading,onChange,onSubmit} = useLoanCreateController(navigation.goBack);
   return (
     <LoanCreateTemplate
+      error={error}
       theme={ThemeBase.Midway}
       nameLabel='Nome'
       nameValue={data.name}
