@@ -1,10 +1,8 @@
 import React, { useCallback } from 'react'
-import { ThemeBase } from '@poc/theme'
 import { LoanListTemplate } from '@poc/templates'
 import { LoanEntity, useLoanListController } from '@poc/core'
 import { useNavigation } from '@react-navigation/native'
 import { NAVIGATOR_CONSTANTS } from '../../constants'
-import IconPlus from '../../assets/Icons/iconPlus.svg';
 import { useSelector } from 'react-redux'
 import { IGlobalState } from '@poc/interfaces'
 
@@ -29,7 +27,6 @@ export const LoanListScreen = () => {
       error={error}
       loading={loading}
       callBack={navigateToDetail}
-      IconAddButton={IconPlus}
       navigateToCreate={navigateToCreate}
     />
   )
