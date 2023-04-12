@@ -6,7 +6,8 @@ import { screens } from "./screens";
 export const LoanStack:IMicrofont = {
   stack: {
     component: Route,
-    name: NAVIGATOR_CONSTANTS.STACK_NAME
+    name: NAVIGATOR_CONSTANTS.STACK_NAME,
+    title: NAVIGATOR_CONSTANTS.STACK_TITLE,
   },
   initialRoute: NAVIGATOR_CONSTANTS.LIST_SCREEN_NAME,
   screens

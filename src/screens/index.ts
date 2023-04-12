@@ -1,9 +1,10 @@
+import { IScreen } from "@poc/interfaces";
 import { NAVIGATOR_CONSTANTS } from "../constants";
 import { LoanCreateScreen } from "./create";
 import { LoanDetailScreen } from "./detail";
 import { LoanListScreen } from "./list";
 
-export const screens = [
+export const screens:IScreen[] = [
   {
     component: LoanListScreen,
     name: NAVIGATOR_CONSTANTS.LIST_SCREEN_NAME,
